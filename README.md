@@ -35,5 +35,3 @@
 <td align="center">The aim of this project is to code a C library regrouping common functions that are going to be used in other projects.</td>
 <td align="center"><a href="https://github.com/ChewyToast/00_libft"><img src="https://badge42.vercel.app/api/v2/cl8a35p1o00060hjtc2e3ktt3/project/2793034" alt="bmoll-pe's 42 Libft Score" /><a/></td>
 </tr>
-
-- [SUBJECT](https://github.com/ChewyToast/00_libft/files/9610688/es.subject.pdf)
