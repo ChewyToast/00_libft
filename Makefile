@@ -43,21 +43,35 @@ LIBR = 		libft.h
 
 all:		$(NAME)
 
+# Colors
+
+DEF_COLOR = \033[0;39m
+GRAY = \033[0;90m
+RED = \033[0;91m
+GREEN = \033[0;92m
+YELLOW = \033[0;93m
+BLUE = \033[0;94m
+MAGENTA = \033[0;95m
+CYAN = \033[0;96m
+WHITE = \033[0;97m
+
+all:		$(NAME)
+
 %.o: %.c $(LIBR)
-	$(CC) $(FLAGS) $< -o $@
-
-# $(OBJS):		$(LIBR) $(SRCS)
-#			$(CC) $(FLAGS) $(SRCS)
-
-# $(BNS_OBJS):	$(LIBR) $(BNS_SRCS)
-#			$(CC) $(FLAGS) $(BNS_SRCS)
+	@echo "$(BLUE) compiling $<"
+	@echo "$(GRAY)"
+	$(CC) $(FLAGS) -c $< -o $@
+	@echo "$(CYAN)--------------------------------------------------------------"
 
 $(NAME):	$(OBJS) $(LIBR)
+			@echo "$(YELLOW)\n\nlinking...$(GRAY)"
 			@ar -rcs $(NAME) $^
+			@echo "$(GREEN)\n🌐 LIBRARY LIBFT WITHOUT BONUS COMPILED 🌐$(DEF_COLOR)\n"
 
-bonus:		$(OBJS) $(BNS_OBJS) $(LIBR)
-			@ar -rcs	$(NAME) $^
-			@touch		$@
+bonus:		$(OBJ) $(BNS_OBJS) $(LIBR)
+			@echo "$(YELLOW)\n\nlinking...$(GRAY)"
+			@ar -rcs $(NAME) $^
+			@echo "$(GREEN)\n🌐 LIBRARY LIBFT WITH BONUS COMPILED 🌐$(DEF_COLOR)\n"
 
 clean:
 			@rm -f	$(OBJS)
