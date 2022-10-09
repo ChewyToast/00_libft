@@ -65,7 +65,7 @@ all:		$(NAME)
 
 $(NAME):	$(OBJS) $(LIBR)
 			@echo "$(YELLOW)\n\nlinking...$(GRAY)"
-			@ar -rcs $(NAME) $^
+			@ar -rcs $(NAME) $(OBJS)
 			@echo "$(GREEN)\n🌐 LIBRARY LIBFT WITHOUT BONUS COMPILED 🌐$(DEF_COLOR)\n"
 
 bonus:		$(OBJ) $(BNS_OBJS) $(LIBR)
