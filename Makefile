@@ -6,7 +6,7 @@
 #    By: bmoll-pe <bmoll-pe@student.42bcn>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/10 04:23:57 by bmoll-pe          #+#    #+#              #
-#    Updated: 2022/10/10 04:24:02 by bmoll-pe         ###   ########.fr        #
+#    Updated: 2022/11/29 18:03:13 by bmoll-pe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,8 @@ SRCS =		ft_atoi.c		ft_memmove.c	ft_strlcpy.c	\
 			ft_itoa.c		ft_strdup.c		ft_strtrim.c	\
 			ft_memchr.c		ft_striteri.c	ft_substr.c		\
 			ft_memcmp.c		ft_strjoin.c	ft_tolower.c	\
-			ft_memcpy.c		ft_strlcat.c	ft_toupper.c
+			ft_memcpy.c		ft_strlcat.c	ft_toupper.c	\
+			ft_isspace.c
 
 BNS_SRCS =	ft_lstnew_bonus.c		ft_lstadd_front_bonus.c		\
 			ft_lstsize_bonus.c		ft_lstlast_bonus.c			\
