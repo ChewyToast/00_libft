@@ -6,11 +6,11 @@
 /*   By: bmoll-pe <bmoll-pe@student.42bcn>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 18:00:27 by bmoll-pe          #+#    #+#             */
-/*   Updated: 2022/11/29 18:02:45 by bmoll-pe         ###   ########.fr       */
+/*   Updated: 2022/11/29 18:05:30 by bmoll-pe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isspace(int argv)
+int	ft_isspace(int argv)
 {
 	if (argv == 32
 		|| argv == '\n'
